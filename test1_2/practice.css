@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-color: #2d2f35;
+}
+
+.inner {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.inner a {
+    display: inline-block;
+}
+
+.header {
+    border-bottom: 1px solid #474a51;
+}
+
+.banner {
+    position: relative;
+    height: 300px;
+    background: url("bg_home_intro.gif") repeat-x;
+    border-bottom: 1px solid #474a51;
+}
+
+.content {
+    width: 400px;
+    margin-left: 10%;
+    position: relative;
+    z-index: 99;
+}
+
+.title {
+    font-size: 22px;
+    font-family: monospace;
+    color: #ffff00;
+    font-weight: 300;
+}
+
+.content p {
+    font-size:  12px;
+    color: #cccccc;
+    margin-top: 25px;
+}
+
+img.img_intro {
+    position: absolute;
+    bottom: 0px;
+    right: 10%;
+}
+
+.menu {
+    padding: 20px;
+    border: 1px solid #474a51;
+}
+
+.menu ul {
+    list-style-type: none;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+
+.menu ul li {
+    display: inline-block;
+    position: relative;
+    margin-left: 12px;
+}
+
+.menu ul li a {
+    display: inline-block;
+}
+
+img.index {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}
+
+.main {
+    padding: 20px 0;
+    
+}
+
+.info {
+    text-align: justify;
+    width: 40%;
+}
+
+.info.note-1 {
+    background: url("home_services_bg_design.gif") no-repeat right bottom;
+    float: left;
+}
+
+.info.note-2 {
+    background: url("home_services_bg_marketing.gif") no-repeat;
+    float: right;
+}
+
+.info h3.title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.info p {
+    font-size: 14px;
+    color: #cccccc;
+}
+
+.info.note-2 p {
+    margin-top: 35px;
+}
+
+.clear::after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.footer {
+    border-top: 1px solid #474a51;
+    text-align: center;
+    height: 120px;
+    color: white; 
+    font-size: 14px;
+    background: #24262a url("bg_footer.gif") center no-repeat;
+}

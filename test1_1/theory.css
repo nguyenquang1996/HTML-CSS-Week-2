@@ -1,0 +1,122 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+    border: 1px solid #0033FF;
+    width: 500px;
+    margin: 0 auto;   
+}
+
+.title {
+    background: url("title_background.gif") repeat-x;
+    height: 25px;
+    line-height: 1.6;
+    font-size: 16px;
+    padding-left: 4px;
+}
+
+.player-info {
+    display: -webkit-flex; /* Safari*/
+    display: -moz-flex; /*moza */
+    display: -ms-flex; /* IE */
+    display: -o-flex; /* Opera */
+    display: flex; /* dùng để hỗ trợ những trình duyệt còn lại */
+}
+
+.player-info img {
+    width: 100px;
+    height: 90px;
+}
+
+.info {
+    margin-left: 15px;
+    height: 100px;
+    width: 100%;
+    overflow: scroll;
+}
+
+.info ul {
+    list-style: none; /* không đổi hình tròn trong list */
+}
+
+.facts .title {
+    background: none;
+}
+
+.facts-contian {
+    list-style: none;
+    margin-left: 50px;                      
+}
+
+/* Phía trước của li hiện hình sao dùng content */
+.facts ul li:before {
+    content: url("star.gif");
+    margin-right: 4px;
+}
+
+.facts-contain li {
+    padding: 4px 0;
+}
+
+.post {
+    margin-top: 40px;
+    padding: 0 4px;
+    font-size: 15px;
+}
+
+.post-contain {
+    position: relative; /* Không thay đổi cấu trúc của phần tử. Nhưng có thể di chuyển nó mà không ảnh hướng đến các phần tử khác*/
+    background: #ECECEC;
+    padding: 4px 6px;
+}
+
+/* Nếu không có thuộc tính after thì cái hình tam giác sẽ nằm phía sau chữ vo dich */
+.post-contain:after {
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    /* Dùng để vễ hình tam giác. */
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #ECECEC;
+    /*                          */
+    top: 100%;
+    left: 10%;
+}
+
+.post-info {
+    margin-left: 90px;
+    padding: 1px 0;
+}
+
+.post-info a {
+    -webkit-text-decoration: none;
+    -moz-text-decoration: none;
+    -ms-text-decoration: none;
+    -o-text-decoration: none;
+    text-decoration: none;
+    color: #0c35f1;
+}
+
+.comment {
+    padding: 20px 6px;
+    font-size: 15px;
+}
+
+.comment h4 {
+    text-align: center;
+    font-size: 17px;
+}
+
+.comment table input[type="text"] {
+    width: 135px;
+    height: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
