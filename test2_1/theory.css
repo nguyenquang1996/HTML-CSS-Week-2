@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+
+.container {
+    margin: 0 auto;
+    background: #e6f3f9;
+    width: 300px;
+    padding: 10px;
+    padding-top: 0;
+}
+
+.blog h3 {
+    font-size: 14px;
+    padding: 2px 0px;
+}
+
+.box {
+    border-top: 2px solid #ffa500;
+    padding: 10px;
+    background: #fff;
+    font-size: 12px;
+}
+
+.box img {
+    max-width: auto;
+    height: 77px;
+}
+
+.box p {
+    float: left;
+    width: 40%;
+    margin-left: 10px;
+}
+
+
+
+.box .img-blog {
+    float: left;
+    width: 50%;
+    padding: 1px;
+    border: 1px solid rgba(193, 183, 183, 0.74);
+}
+
+.box:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.color {
+    color: #0a6395;
+}
+
+.box-2 {
+    background: #faf0bf;
+}
+
+ul.box-2 {
+    color: #0a6395;
+    list-style-type: none;
+}
+
+ul.box-2 li {
+    padding: 7px 0 7px 10px;
+    border-bottom: 1px solid #ffffff;
+}
+
+.edit1 .img-blog {
+    border: none;
+    width: 30%;
+}
+
+.edit1 img {
+    width: 100px;
+    height: auto;
+}
+
+span.day {
+    color: #808080;
+}
+
+.edit1 p {
+    width: 65%;
+    line-height: 1.0;
+}
+
+.edittext {
+    line-height: 0.5;
+    margin-top: 12px;
+}
+
+a {
+    -webkit-text-decoration: none;
+    -moz-text-decoration: none;
+    -ms-text-decoration: none;
+    -o-text-decoration: none;
+    text-decoration: none;
+    color: #0a6395;
+}
+
+.box-3 {
+    background: #f4f4ec;
+    position: relative;
+    height: 25px;
+    padding: 15px 0px 10px 20px;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.box-3 img {
+    position: absolute;
+    top: 1px;
+    right: 0;
+    width: auto;
+    height: 50px;
+}
+
+.edit2 {
+    position: relative;
+    padding: 0 0 0 10px;
+}
+
+.img4-blog {
+    position: absolute;
+    float: right;
+    border: none;
+    right: 0;
+    bottom: 0;
+    width: 30%;
+}
+
+.edit2 p {
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+.competition-box {
+    margin-top: 6px; 
+    border-top: 1px solid gray;
+}
+
+.competition-box ul {
+    background: white;
+    border: 1px solid #dadada;
+    padding: 15px;
+    margin-bottom: 10px;
+    list-style: none;
+}
