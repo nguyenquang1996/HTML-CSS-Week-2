@@ -1,6 +1,46 @@
-* {
-    margin: 0;
-    padding: 0;
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 body {
@@ -19,6 +59,7 @@ body {
 .blog h3 {
     font-size: 14px;
     padding: 2px 0px;
+    font-weight: bold !important;
 }
 
 .box {
@@ -36,16 +77,18 @@ body {
 .box p {
     float: left;
     width: 40%;
-    margin-left: 10px;
+    padding-left: 10px;
 }
-
-
 
 .box .img-blog {
     float: left;
-    width: 50%;
+    width: 55%;
+}
+
+.box .img-blog img {
     padding: 1px;
     border: 1px solid rgba(193, 183, 183, 0.74);
+    width: 100%;
 }
 
 .box:after {
@@ -96,6 +139,9 @@ span.day {
 .edittext {
     line-height: 0.5;
     margin-top: 12px;
+    width: 182px !important;
+    font-size: 11px;
+    padding-left: 13px !important;
 }
 
 a {
@@ -104,6 +150,11 @@ a {
     -ms-text-decoration: none;
     -o-text-decoration: none;
     text-decoration: none;
+    color: #0a6395;
+}
+
+.content2 {
+    text-decoration: underline;
     color: #0a6395;
 }
 
@@ -129,16 +180,18 @@ a {
     padding: 0 0 0 10px;
 }
 
-.img4-blog {
+.img4-blog img {
     position: absolute;
-    float: right;
     border: none;
-    right: 0;
-    bottom: 0;
-    width: 30%;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 110px;
+    height: auto;
 }
 
 .edit2 p {
+    width: 150px;
     margin-top: 15px;
     line-height: 1.4;
 }
@@ -148,10 +201,37 @@ a {
     border-top: 1px solid gray;
 }
 
+.competition-box h4 {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.box.edit2 {
+    position: relative;
+}
+
 .competition-box ul {
     background: white;
     border: 1px solid #dadada;
     padding: 15px;
     margin-bottom: 10px;
     list-style: none;
+}
+
+.lt2 {
+    border: none !important;
+    width: 95px !important;
+    height: 95px !important;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.textheader {
+    font-weight: bold;
+}
+
+.textblog {
+    margin-top: 12px;
 }

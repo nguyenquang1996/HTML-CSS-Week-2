@@ -1,6 +1,46 @@
-* {
-    margin: 0;
-    padding: 0;
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 body {
@@ -11,6 +51,10 @@ body {
 .inner {
     width: 1000px;
     margin: 0 auto;
+}
+
+.nav {
+    margin-left: -110px;
 }
 
 .inner a {
@@ -24,39 +68,46 @@ body {
 .banner {
     position: relative;
     height: 300px;
-    background: url("bg_home_intro.gif") repeat-x;
+    background: url("image/bg_home_intro.gif") repeat-x;
     border-bottom: 1px solid #474a51;
 }
 
 .content {
-    width: 400px;
+    width: 415px;
     margin-left: 10%;
     position: relative;
     z-index: 99;
+    margin-left: -20px;
 }
 
 .title {
-    font-size: 22px;
-    font-family: monospace;
+    margin-left: 30px;
+    font-size: 23px;
+    font-family: 'Courier New', Courier, monospace;
     color: #ffff00;
     font-weight: 300;
+    width: 400px;
+    text-align: justify;
+
 }
 
 .content p {
+    margin-left: 30px;
     font-size:  12px;
     color: #cccccc;
     margin-top: 25px;
 }
 
-img.img_intro {
+.img_intro {
     position: absolute;
     bottom: 0px;
-    right: 10%;
+    right: 13%;
 }
 
 .menu {
     padding: 20px;
     border: 1px solid #474a51;
+    margin-left: 12px;
 }
 
 .menu ul {
@@ -83,8 +134,7 @@ img.index {
 }
 
 .main {
-    padding: 20px 0;
-    
+    padding: 20px 0;   
 }
 
 .info {
@@ -93,13 +143,37 @@ img.index {
 }
 
 .info.note-1 {
-    background: url("home_services_bg_design.gif") no-repeat right bottom;
+    position: relative;
     float: left;
+    width: 480px;
+    height: 390px;
+    margin-left: -20px;
+}
+
+.info.note-1 .title,.info.note-2 .title {
+    width: 450px;
+    font-size: 23px;
+}
+
+.info.note-1 img {
+    position: absolute;
+    bottom: 5px;
+    right: 28px;
+    z-index: -1;
 }
 
 .info.note-2 {
-    background: url("home_services_bg_marketing.gif") no-repeat;
+    position: relative;
     float: right;
+    width: 480px;   
+    margin-right: -20px;
+}
+
+.info.note-2 img {
+    position: absolute;
+    top: 0;
+    left: 45px;
+    z-index: -1;
 }
 
 .info h3.title {
@@ -108,6 +182,7 @@ img.index {
 }
 
 .info p {
+    margin-left: 30px;
     font-size: 14px;
     color: #cccccc;
 }
@@ -127,8 +202,8 @@ img.index {
 .footer {
     border-top: 1px solid #474a51;
     text-align: center;
-    height: 120px;
+    height: 110px;
     color: white; 
-    font-size: 14px;
-    background: #24262a url("bg_footer.gif") center no-repeat;
+    font-size: 8px;
+    background: #24262a url("image/bg_footer.gif") center no-repeat;
 }

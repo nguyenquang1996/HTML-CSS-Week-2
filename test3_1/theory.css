@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.6875em;
+    background: #121214;
+}
+
+.container {
+    color: #797782;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -0-flex;
+    display: flex;
+    padding: 26px 25px;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.topic-left {
+    width: 450px;
+    float: left;
+}
+
+.title {
+    margin-bottom: 30px;
+}
+
+.content-box {
+    border-bottom: 1px dotted #3f3f41;
+    padding: 12px 0px;
+}
+
+.content-box:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.content-box img {
+    float: left;
+    margin-right: 14px;
+}
+
+.content-text {
+    padding-right: 20px;
+}
+
+.content-text h4 {
+    color: white;
+}
+
+.content-text p {
+    margin-top: 36px;
+    line-height: 15px;
+}
+
+a.more-info {
+    -webkit-text-decoration: none;
+    -moz-text-decoration: none;
+    -ms-text-decoration: none;
+    -o-text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+a.more-info:before {
+    content: url("arr_1.gif");
+    margin-right: 4px;
+    float: left;
+}
+
+.content-2 {
+    margin-top: 70px;
+}
+
+.white {
+    color: white;
+    padding-bottom: 4px;
+}
+
+.list {
+    float: left;
+    width: 50%;
+}
+
+.list-right {
+    float: left;
+    width: 50%;
+}
+
+.list li a {
+    color: #9494a0;
+    -webkit-text-decoration: underline;
+    -moz-text-decoration: underline;
+    -ms-text-decoration: underline;
+    -o-text-deoration: underline;
+    text-decoration: underline;
+    padding-left: 10px;
+}
+
+.list ul {
+    list-style: none;
+}
+
+.list li:before {
+    content: "";
+
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-left: 5px solid #838080;
+    border-bottom: 5px solid transparent;
+    display: block;
+    height: 0;
+    width: 0;
+    left: 0;
+    top: 0.9em;
+    position: relative;
+}
+
+.box-text {
+    margin-top: 22px;
+}
+
+.box {
+    border-top: 1px solid #353439;
+    padding: 18px 0;
+    margin-top: 15px;
+}
+
+.topic-right {
+    float: left;
+    background: #232227;
+    width: 196px;
+    height: 300px;
+    padding: 50px 19px 20px 40px;
+    margin-left: 30px;
+}
