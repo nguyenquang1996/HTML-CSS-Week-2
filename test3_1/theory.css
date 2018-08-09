@@ -33,6 +33,7 @@ body {
 .content-box {
     border-bottom: 1px dotted #3f3f41;
     padding: 12px 0px;
+    margin-top: -20px;
 }
 
 .content-box:after {
@@ -57,7 +58,9 @@ body {
 }
 
 .content-text p {
-    margin-top: 36px;
+    margin-top: 30px;
+    width: 450px;
+    font-size: 10px;
     line-height: 15px;
 }
 
@@ -73,7 +76,7 @@ a.more-info {
 }
 
 a.more-info:before {
-    content: url("arr_1.gif");
+    content: url("image/arr_1.gif");
     margin-right: 4px;
     float: left;
 }
@@ -85,6 +88,11 @@ a.more-info:before {
 .white {
     color: white;
     padding-bottom: 4px;
+}
+
+.box .more-info {
+    margin-top: 50px;
+
 }
 
 .list {
