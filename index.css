@@ -1,0 +1,23 @@
+
+
+
+ul li a:visited{
+    color: blue;
+}
+
+.container {
+    width: 100%;
+}
+
+.html-css {
+    width: 48%;
+    float: left;
+    border-right: 1px solid black;
+    
+}
+
+.js {
+    width: 50%;
+    float: left;
+    margin-left: 25px;
+}

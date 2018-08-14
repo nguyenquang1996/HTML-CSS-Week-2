@@ -1,0 +1,136 @@
+* {
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.wrap {
+    position: relative;
+    margin: 0 400px;
+}
+
+.slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1  }
+}
+
+.slide1 {
+    width: 500px;
+    min-height: 340px;
+    background-image: url('images/picture1.jpeg');
+}
+
+.slide2 {
+    width: 500px;
+    min-height: 340px;
+    background-image: url('images/picture2.jpeg');
+}
+
+.slide3 {
+    width: 500px;
+    min-height: 340px;
+    background-image: url('images/picture3.jpeg');
+}
+
+.slide4 {
+    width: 500px;
+    min-height: 340px;
+    background-image: url('images/picture4.jpeg');
+}
+
+.slide5 {
+    width: 500px;
+    min-height: 340px;
+    background-image: url('images/picture5.jpeg');
+}
+
+.slide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.slide-content span {
+    position: absolute;
+    font-size: 15px;
+    color: white;
+    top: 0;
+    left: 0;
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    border-style: none;
+}
+
+#arrow-left {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right:10px solid white;
+    left: 35px;
+    top: 50%;
+    z-index: 1;
+    
+}
+
+#arrow-right {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid white;
+    right: 35px;
+    top: 50%;
+    z-index: 1;   
+}
+
+
+.dot {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    margin: 0px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: inline-block;
+    opacity: 0.6;
+}
+
+.active,.dot:hover {
+    opacity: 1;
+}
+
+.row-footer-slide {
+    position: absolute;
+    bottom: 49%;
+    left: 550px;
+}
+
+.row-footer-slide:after {
+    content: "";
+    display: table;
+    clear: both;
+}

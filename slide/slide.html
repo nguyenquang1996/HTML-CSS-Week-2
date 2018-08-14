@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Slider Show</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="slide.css" />
+</head>
+<body onload="startSlide()">
+
+    <!-- HTML -->
+    <div class="wrap">
+        <div id="arrow-left" class="arrow" onclick="js_clickleft()"></div>
+
+        <div id="slider">
+
+            <div class="slide slide1">
+                <div class="slide-content">
+                    <span class="picture-name"></span>
+                </div>
+            </div>
+
+            <div class="slide slide2">
+                <div class="slide-content">
+                    <span class="picture-name"></span>
+                </div>
+            </div>
+
+            <div class="slide slide3">
+                <div class="slide-content">
+                    <span class="picture-name"></span>
+                </div>
+            </div>
+
+            <div class="slide slide4">
+                <div class="slide-content">
+                    <span class="picture-name"></span>
+                </div>
+            </div>
+
+            <div class="slide slide5">
+                <div class="slide-content">
+                    <span class="picture-name"></span>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="arrow-right" class="arrow" onclick="js_clickright()"></div>
+
+    </div>
+
+    <div class="row-footer-slide">    
+        <img src="images/picture1.jpeg" alt="" width="100%" class="dot" onclick="js_click(0)">
+      
+        <img src="images/picture2.jpeg" alt="" width="100%" class="dot" onclick="js_click(1)">
+    
+        <img src="images/picture3.jpeg" alt="" width="100%" class="dot" onclick="js_click(2)">
+    
+        <img src="images/picture4.jpeg" alt="" width="100%" class="dot" onclick="js_click(3)">
+    
+        <img src="images/picture5.jpeg" alt="" width="100%" class="dot" onclick="js_click(4)">   
+    </div>
+    <!-- End HTML -->
+    <script  src="slide.js"></script>
+</body>
+</html>
