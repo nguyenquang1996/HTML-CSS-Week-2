@@ -7,9 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="slide.css" />
 </head>
-<body onload="startSlide()">
+<body onload="js_startSlide()">
 
-    <!-- HTML -->
     <div class="wrap">
         <div id="arrow-left" class="arrow" onclick="js_clickLeft()"></div>
 
@@ -48,21 +47,15 @@
         </div>
 
         <div id="arrow-right" class="arrow" onclick="js_clickRight()"></div>
-
     </div>
 
-    <div class="row-footer-slide">    
-        <img src="images/picture1.jpeg" alt="" width="100%" class="dot" onclick="js_click(0)">
-      
-        <img src="images/picture2.jpeg" alt="" width="100%" class="dot" onclick="js_click(1)">
-    
-        <img src="images/picture3.jpeg" alt="" width="100%" class="dot" onclick="js_click(2)">
-    
-        <img src="images/picture4.jpeg" alt="" width="100%" class="dot" onclick="js_click(3)">
-    
-        <img src="images/picture5.jpeg" alt="" width="100%" class="dot" onclick="js_click(4)">   
+    <div class="dot-picture-slide">    
+        <img src="images/picture1.jpeg" alt="" width="100%" class="dot-picture" onclick="js_click(0)">      
+        <img src="images/picture2.jpeg" alt="" width="100%" class="dot-picture" onclick="js_click(1)">    
+        <img src="images/picture3.jpeg" alt="" width="100%" class="dot-picture" onclick="js_click(2)">   
+        <img src="images/picture4.jpeg" alt="" width="100%" class="dot-picture" onclick="js_click(3)">   
+        <img src="images/picture5.jpeg" alt="" width="100%" class="dot-picture" onclick="js_click(4)">   
     </div>
-    <!-- End HTML -->
 
     <script  src="slide.js"></script>
 </body>
